@@ -6,17 +6,440 @@
   /* Page Colors */
   --primary-color: #4535f6;
   --secondary-color: #ffffff;
+  --third-color: #fafafa;
   --accent-color: #e2e2e2;
   /* Text Colors */
   --primary-text-color: #111111;
   --secondary-text-color: #8a8a8a;
+  --third-text-color: #ffffff;
+
   --accent-text-color: #4535f6;
+  /* SVG Filters */
+  --primary-hover-svg-filter: brightness(0) saturate(100%) invert(100%)
+    sepia(100%) saturate(1%) hue-rotate(127deg) brightness(102%) contrast(101%);
 }
 
 * {
   margin: 0;
   padding: 0;
   font-family: var(--primary-font);
+  box-sizing: border-box;
 }
 
+body {
+  background: var(--secondary-color);
+  overflow-x: hidden;
+}
 
+/* ----------------------[ Start Global Of Styling ]--------------------- */
+
+button {
+  background: var(--primary-color);
+  color: var(--third-text-color);
+  text-transform: capitalize;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.padding {
+  padding: 40px 120px;
+}
+
+/* ----------------------[ End Global Of Styling ]--------------------- */
+
+/* ----------------------[ Start Of Header ]--------------------- */
+
+header {
+  min-width: 100%;
+  min-height: 50px;
+  display: flex;
+  justify-content: space-between;
+  z-index: 2;
+  position: relative;
+}
+
+.logo {
+  max-width: 100%;
+  height: 50px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+}
+
+nav .nav-list {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+}
+
+nav .nav-list .nav-link {
+  text-decoration: none;
+  text-transform: capitalize;
+  color: var(--secondary-text-color);
+}
+
+.user-menu-list {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  gap: 25px;
+}
+
+.user-menu-list .user-menu-item .user-menu-link {
+  text-decoration: none;
+  text-transform: capitalize;
+  color: var(--secondary-text-color);
+}
+
+.user-menu-list .user-menu-item:nth-child(3) .user-menu-link {
+  color: var(--accent-text-color);
+  font-weight: 600;
+}
+
+.user-menu-list .user-menu-item img {
+  max-width: 100%;
+  height: 30px;
+}
+
+.user-menu-list .user-menu-item button {
+  padding: 10px 32px;
+}
+
+.user-menu-list .user-menu-item select {
+  background: transparent;
+  border: none;
+  padding: 15px;
+  color: var(--secondary-text-color);
+  font-size: 100%;
+  outline: none;
+}
+
+/* ----------------------[ End Of Header ]--------------------- */
+
+/* ----------------------[ Start Of Hero ]--------------------- */
+
+.hero {
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+  justify-content: space-between;
+  align-items: flex-start;
+  position: relative;
+}
+
+.hero .hero-content {
+  flex: 1;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 50px;
+  position: relative;
+  z-index: 2;
+}
+
+.hero .hero-content .hero-heading h1 {
+  font-weight: 300;
+  font-size: 325%;
+  line-height: 100px;
+}
+
+.hero .hero-content .hero-heading p {
+  color: var(--secondary-text-color);
+  font-weight: 400;
+  font-size: 100%;
+  width: 80%;
+}
+
+.hero .hero-content .hero-buttons {
+  display: flex;
+  gap: 15px;
+  padding: 35px 0;
+  position: relative;
+}
+
+.hero .hero-content .hero-buttons::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 50px;
+  height: 1px;
+  background-color: var(--primary-color);
+}
+
+.hero .hero-content .hero-buttons button {
+  min-width: 200px;
+  padding: 20px 45px;
+  font-weight: 600;
+  font-size: 100%;
+  line-height: 20px;
+}
+
+.hero .hero-content .hero-buttons button:nth-child(2) {
+  background: transparent;
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
+}
+
+.hero .hero-rating {
+  max-width: 400px;
+  min-height: 165px;
+  border-radius: 10px;
+  padding: 25px;
+  box-shadow: 0px 4px 25px 0px #0000000d;
+}
+
+.hero .hero-rating .rating-content h1 {
+  font-weight: 400;
+  line-height: 45px;
+}
+
+.hero .hero-rating .rating-content span {
+  display: flex;
+  gap: 10px;
+}
+
+.hero .hero-rating .business {
+  display: flex;
+  gap: 10px;
+  padding-top: 20px;
+}
+
+.hero .hero-rating .business span {
+  width: 35px;
+  height: 35px;
+  border-radius: 100%;
+  background: #f3f3f3;
+}
+
+.hero .hero-rating .business span:last-of-type {
+  background: url("/assets/icons/plus.svg") center no-repeat;
+  background-size: cover;
+}
+
+.hero .hero-img {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  z-index: 1;
+}
+
+/* TODO: This line should be at end of the project */
+.hero .hero-img #shape {
+  background: url("/assets/images/shape.svg");
+  display: none;
+}
+
+/* ----------------------[ End Of Hero ]--------------------- */
+
+/* ----------------------[ Start Of Main ]--------------------- */
+.statistics-container {
+  min-width: 100%;
+  min-height: 15dvh;
+  background: var(--third-color);
+  display: flex;
+  padding: 25px;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.statistics {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.statistics span {
+  font-size: 350%;
+  text-transform: uppercase;
+  font-weight: 300;
+  color: var(--primary-color);
+}
+
+.statistics p {
+  width: 250px;
+  font-size: 150%;
+  font-weight: 300;
+}
+
+.about-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 200px;
+  padding: 120px;
+}
+
+.about {
+  max-width: 725px;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 25px;
+}
+
+.about-content h1 {
+  font-size: 300%;
+  font-weight: 300;
+  line-height: 75px;
+}
+
+.about-content p {
+  color: var(--secondary-text-color);
+  font-weight: 400;
+  width: 80%;
+  padding: 25px 0;
+}
+
+.about-faq-container {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.faq {
+  border-bottom: 1px solid var(--primary-text-color);
+}
+
+.faq .heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+}
+.faq .heading h4 {
+  font-size: 120%;
+  font-weight: 300;
+}
+
+.about-images {
+  display: flex;
+}
+
+.about-images div {
+  width: 200px;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 25px;
+  margin-right: 25px;
+}
+
+.about-images > div > div > h1 {
+  font-size: 150%;
+  font-weight: 300;
+  color: var(--primary-text-color);
+}
+
+.about-images > div > div > p {
+  font-size: 90%;
+  color: var(--secondary-text-color);
+  font-weight: 400;
+  width: 100%;
+}
+
+.service-container {
+  width: 100%;
+  background: var(--third-color);
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 100px;
+}
+
+.service-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+.service-content .service-about {
+  display: flex;
+  width: 700px;
+  flex-flow: column nowrap;
+  gap: 25px;
+}
+
+.service-content .service-about h1 {
+  font-size: 300%;
+  font-weight: 300;
+}
+
+.service-content .service-about p {
+  font-size: 90%;
+  color: var(--secondary-text-color);
+  font-weight: 400;
+  width: 100%;
+}
+
+.service-content .service-about .advantages {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 25px;
+  padding: 25px 0;
+}
+
+.service-content .service-about .advantages span {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  font-size: 100%;
+  color: var(--secondary-text-color);
+  font-weight: 400;
+  width: 100%;
+}
+
+.service-features {
+  display: flex;
+  justify-content: space-between;
+  gap: 25px;
+}
+
+.service-feature {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 25px;
+  width: 400px;
+  height: auto;
+  gap: 25px;
+  border: 1px solid #e2e2e2;
+  border-radius: 10px;
+  padding: 45px 25px;
+}
+
+.feature-icon {
+  width: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70px;
+  border: 1px solid #e2e2e2;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.service-feature h3 {
+  font-weight: 300;
+  font-size: 150%;
+}
+
+.service-feature p {
+  font-weight: 300;
+  font-size: 100%;
+  color: var(--secondary-text-color);
+}
+
+.service-feature.active {
+  background: var(--primary-color);
+}
+
+.service-feature.active .feature-icon {
+  filter: var(--primary-hover-svg-filter);
+}
+
+.service-feature.active h3,
+.service-feature.active p {
+  color: var(--third-text-color);
+}
+
+/* ----------------------[ End Of Main ]--------------------- */

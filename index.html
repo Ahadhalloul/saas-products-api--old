@@ -4,17 +4,279 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Saas product api</title>
+    <link rel="stylesheet" href="/style/invoicing-style.css" />
   </head>
   <body>
     <!------------- Start Header -------------->
-    <header></header>
+    <header class="padding">
+      <nav>
+        <div class="logo-container">
+          <img
+            src="./assets/images/logo.svg"
+            alt="e-invoicing logo"
+            class="logo"
+          />
+        </div>
+        <ul class="nav-list">
+          <li class="nav-item"><a class="nav-link" href="#">products</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">pricing </a></li>
+          <li class="nav-item"><a class="nav-link" href="#">about</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">resources</a></li>
+        </ul>
+      </nav>
+      <div class="user-area">
+        <ul class="user-menu-list">
+          <li class="user-menu-item">
+            <img src="/assets/icons/search.svg" alt="search icon" />
+          </li>
+          <li class="user-menu-item">
+            <a href="#" class="user-menu-link">contact</a>
+          </li>
+          <li class="user-menu-item">
+            <a href="#" class="user-menu-link">login</a>
+          </li>
+          <li class="user-menu-item">
+            <button class="user-menu-button">get started</button>
+          </li>
+          <li class="user-menu-item">
+            <select class="language">
+              <option value="english">EN</option>
+              <option value="arabic">AR</option>
+            </select>
+          </li>
+        </ul>
+      </div>
+    </header>
     <!------------- End Header -------------->
     <!------------- Start Main -------------->
     <main>
       <!-- Start Hero Section -->
-      <section>
+      <section class="hero padding">
+        <div class="hero-content">
+          <div class="hero-heading">
+            <h1>Automated e-Invoicing Solutions for your Business</h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+              commodo ligula eget dolor. Aenean massa. Cum sociis natoque
+              penatibus et magnis dis parturient montes.
+            </p>
+          </div>
+          <div class="hero-buttons">
+            <button>get started</button>
+            <button>contact sales</button>
+          </div>
+          <div class="hero-rating">
+            <div class="rating-content">
+              <h1>Business who trust us</h1>
+              <span>
+                <div class="rating-stars">
+                  <img
+                    src="/assets/icons/yellow-star.svg"
+                    alt="yellow star"
+                    width="15"
+                    height="15"
+                  />
+                  <img
+                    src="/assets/icons/yellow-star.svg"
+                    alt="yellow star"
+                    width="15"
+                    height="15"
+                  />
+                  <img
+                    src="/assets/icons/yellow-star.svg"
+                    alt="yellow star"
+                    width="15"
+                    height="15"
+                  />
+                  <img
+                    src="/assets/icons/yellow-star.svg"
+                    alt="yellow star"
+                    width="15"
+                    height="15"
+                  />
+                  <img
+                    src="/assets/icons/yellow-star.svg"
+                    alt="yellow star"
+                    width="15"
+                    height="15"
+                  />
+                </div>
+                <div class="rating-number">5.0</div>
+                <div class="number-ratings">Rates (9.999+)</div>
+              </span>
+            </div>
+            <div class="business">
+              <!-- This should have the logos of the business with width of 35px -->
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+        </div>
+        <div class="hero-img">
+          <img
+            src="/assets/images/saudi-man.svg"
+            alt="A man wearing thawb and shemagh"
+          />
+          <div id="shape"></div>
+        </div>
       </section>
       <!-- End Hero Section -->
+
+      <!-- Start Statistics -->
+      <section class="statistics-container">
+        <div class="statistics">
+          <span>99%</span>
+          <p>Lorem ipsum dolor sit amet</p>
+        </div>
+        <div class="statistics">
+          <span>4,5</span>
+          <p>Lorem ipsum dolor sit amet</p>
+        </div>
+        <div class="statistics">
+          <span>25</span>
+          <p>Lorem ipsum dolor sit amet</p>
+        </div>
+      </section>
+      <!-- End Statistics -->
+
+      <!-- Start About -->
+      <section class="about-container padding">
+        <div class="about-images">
+          <div>
+            <img src="/assets/images/credit-card.svg" />
+            <div>
+              <h1>Title Here</h1>
+              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+            </div>
+          </div>
+          <img src="/assets/images/riyadh-saudi-arabia.svg" />
+        </div>
+        <div class="about">
+          <div class="about-content">
+            <h1>About the product catchy title to be written here</h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+              commodo ligula eget dolor. Aenean massa. Cum sociis natoque
+              penatibus et magnis dis parturient montes.
+            </p>
+          </div>
+          <div class="about-faq-container">
+            <div class="faq">
+              <div class="heading">
+                <h4>Lorem ipsum dolor sit amet, consectetuer</h4>
+                <span><img src="/assets/icons/triangle-down.svg" /></span>
+              </div>
+            </div>
+            <div class="faq">
+              <div class="heading">
+                <h4>Lorem ipsum dolor sit amet, consectetuer</h4>
+                <span><img src="/assets/icons/triangle-down.svg" /></span>
+              </div>
+            </div>
+            <div class="faq">
+              <div class="heading">
+                <h4>Lorem ipsum dolor sit amet, consectetuer</h4>
+                <span><img src="/assets/icons/triangle-down.svg" /></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End About -->
+
+      <!-- Start Service -->
+      <section class="service-container padding">
+        <div class="service-content">
+          <div class="service-about">
+            <h1>Move Forward with Best Method for Best Result</h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+              commodo ligula eget dolor. Aenean massa. Cum sociis natoque
+              penatibus et magnis dis parturient montes.
+            </p>
+            <div class="advantages">
+              <span>
+                <img
+                  src="/assets/icons/check-mark.svg"
+                  width="15"
+                  height="15"
+                />
+                Lorem ipsum dolor sit amet, consectetuer
+              </span>
+              <span>
+                <img
+                  src="/assets/icons/check-mark.svg"
+                  width="15"
+                  height="15"
+                />
+                Lorem ipsum dolor sit amet, consectetuer
+              </span>
+              <span>
+                <img
+                  src="/assets/icons/check-mark.svg"
+                  width="15"
+                  height="15"
+                />
+                Lorem ipsum dolor sit amet, consectetuer
+              </span>
+            </div>
+          </div>
+          <div class="service-video">
+            <img src="/assets/images/video-stock.svg" />
+          </div>
+        </div>
+        <div class="service-features">
+          <div class="service-feature active">
+            <div class="feature-icon">
+              <img
+                src="/assets/icons/light-blob.svg"
+                width="30"
+                height="30"
+              />
+            </div>
+            <h3>Automation</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+              commodo ligula.
+            </p>
+          </div>
+          <div class="service-feature">
+            <div class="feature-icon">
+              <img
+                src="/assets/icons/speaker.svg"
+                width="30"
+                height="30"
+              />
+            </div>
+            <h3>Automation</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+              commodo ligula.
+            </p>
+          </div>
+          <div class="service-feature">
+            <div class="feature-icon">
+              <img
+                src="/assets/icons/headset.svg"
+                width="30"
+                height="30"
+              />
+            </div>
+            <h3>Automation</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+              commodo ligula.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- End Service -->
     </main>
     <!------------- End Main -------------->
     <!------------- Start Footer -------------->
