@@ -239,7 +239,7 @@ nav .nav-list .nav-link {
   right: -30px;
 }
 
-.hero .hero-img #shape img{
+.hero .hero-img #shape img {
   min-width: 150%;
   height: auto;
 }
@@ -271,7 +271,7 @@ nav .nav-list .nav-link {
 }
 
 .statistics p {
-  width: 250px;
+  width: 100%;
   font-size: 150%;
   font-weight: 300;
 }
@@ -453,7 +453,8 @@ nav .nav-list .nav-link {
 
 /* ----------------------[ End Of Main ]--------------------- */
 
-* start features section */ .features-container {
+/* start features section */
+.features-container {
   max-width: 100%;
   padding: 60px 120px;
   display: flex;
@@ -520,8 +521,9 @@ nav .nav-list .nav-link {
   font-size: 0.9rem;
 }
 .first-row .cards-container .card {
-  height: 120px;
-  max-width: 200px;
+  height: 150px;
+  max-width: 250px;
+  position: relative;
 }
 
 .first-row .cards-container .card1 {
@@ -539,11 +541,13 @@ nav .nav-list .nav-link {
   /* border: 1px solid #f1ecff; */
 }
 .blue-text {
+  text-decoration: none;
+  font-weight: 600;
   color: var(--accent-text-color);
 }
 .second-row .cards-container .card {
-  max-width: 230px;
-  height: 120px;
+  max-width: 275px;
+  height: 150px;
 }
 
 .second-row .cards-container .card1 {
@@ -914,6 +918,20 @@ nav .nav-list .nav-link {
   .our-parnters {
     padding-left: 60px;
     padding-right: 60px;
+  }
+}
+
+@media screen and (max-width: 1466px) {
+  .padding {
+    padding: 40px 60px;
+  }
+  .about-container{
+    gap: 50px;
+  }
+  .about-images img{
+    min-width: 50%;
+    height: 300px;
+
   }
 }
 
