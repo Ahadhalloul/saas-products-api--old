@@ -144,14 +144,14 @@ nav .nav-list .nav-link {
 
 .hero .hero-content .hero-heading h1 {
   font-weight: 300;
-  font-size: 325%;
+  font-size: 48px;
   line-height: 100px;
 }
 
 .hero .hero-content .hero-heading p {
   color: var(--secondary-text-color);
   font-weight: 400;
-  font-size: 100%;
+  font-size: 16px;
   width: 80%;
 }
 
@@ -175,7 +175,7 @@ nav .nav-list .nav-link {
   min-width: 200px;
   padding: 20px 45px;
   font-weight: 600;
-  font-size: 100%;
+  font-size: 18px;
   line-height: 20px;
 }
 
@@ -264,15 +264,15 @@ nav .nav-list .nav-link {
 }
 
 .statistics span {
-  font-size: 350%;
+  font-size: 58px;
   text-transform: uppercase;
   font-weight: 300;
   color: var(--primary-color);
 }
 
 .statistics p {
-  width: 100%;
-  font-size: 150%;
+  width: 55%;
+  font-size: 21px;
   font-weight: 300;
 }
 
@@ -291,9 +291,10 @@ nav .nav-list .nav-link {
 }
 
 .about-content h1 {
-  font-size: 300%;
+  font-size: 36px;
   font-weight: 300;
   line-height: 75px;
+  width: 80%;
 }
 
 .about-content p {
@@ -319,7 +320,7 @@ nav .nav-list .nav-link {
   padding: 15px 0;
 }
 .faq .heading h4 {
-  font-size: 120%;
+  font-size: 16px;
   font-weight: 300;
 }
 
@@ -364,13 +365,13 @@ nav .nav-list .nav-link {
 
 .service-content .service-about {
   display: flex;
-  width: 700px;
+  width: 545px;
   flex-flow: column nowrap;
   gap: 25px;
 }
 
 .service-content .service-about h1 {
-  font-size: 300%;
+  font-size: 36px;
   font-weight: 300;
 }
 
@@ -392,7 +393,7 @@ nav .nav-list .nav-link {
   display: flex;
   gap: 15px;
   align-items: center;
-  font-size: 100%;
+  font-size: 16px;
   color: var(--secondary-text-color);
   font-weight: 400;
   width: 100%;
@@ -429,12 +430,12 @@ nav .nav-list .nav-link {
 
 .service-feature h3 {
   font-weight: 300;
-  font-size: 150%;
+  font-size: 21px;
 }
 
 .service-feature p {
   font-weight: 300;
-  font-size: 100%;
+  font-size: 14px;
   color: var(--secondary-text-color);
 }
 
@@ -921,17 +922,16 @@ nav .nav-list .nav-link {
   }
 }
 
-@media screen and (max-width: 1466px) {
+@media screen and (max-width: 1250px) {
   .padding {
-    padding: 40px 60px;
+    padding: 40px 25px;
   }
-  .about-container{
+  .about-container {
     gap: 50px;
   }
-  .about-images img{
+  .about-images img {
     min-width: 50%;
     height: 300px;
-
   }
 }
 
